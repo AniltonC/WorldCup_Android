@@ -6,4 +6,6 @@
     <string name="title_home">Home</string>
     <string name="title_matches">Matches</string>
     <string name="title_groups">Groups</string>
+    <string name="title_tabGroup">Group</string>
+    <string name="title_tabMatchInfo">Match Info</string>
 </resources>

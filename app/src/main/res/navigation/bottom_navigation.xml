@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/specifyMatch">
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.infosystem.worldcup.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_specifyMatche"
-            app:destination="@id/specifyMatche" />
+            app:destination="@id/specifyMatch" />
     </fragment>
     <fragment
         android:id="@+id/matchesFragment"
@@ -20,7 +20,7 @@
         tools:layout="@layout/fragment_matches" >
         <action
             android:id="@+id/action_matchesFragment_to_specifyMatche"
-            app:destination="@id/specifyMatche" />
+            app:destination="@id/specifyMatch" />
     </fragment>
     <fragment
         android:id="@+id/groupsFragment"
@@ -37,10 +37,10 @@
         android:label="fragment_more"
         tools:layout="@layout/fragment_more" />
     <fragment
-        android:id="@+id/specifyMatche"
-        android:name="com.infosystem.worldcup.SpecifyMatche"
-        android:label="fragment_specify_matche"
-        tools:layout="@layout/fragment_specify_matche" >
+        android:id="@+id/specifyMatch"
+        android:name="com.infosystem.worldcup.SpecifyMatch"
+        android:label="fragment_specify_match"
+        tools:layout="@layout/fragment_specify_match">
         <action
             android:id="@+id/action_specifyMatche_to_specifyGroup"
             app:destination="@id/specifyGroup" />

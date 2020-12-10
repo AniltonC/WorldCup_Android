@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SpecifyMatche#newInstance} factory method to
+ * Use the {@link InfoSpecificMatchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SpecifyMatche extends Fragment {
+public class InfoSpecificMatchFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class SpecifyMatche extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SpecifyMatche() {
+    public InfoSpecificMatchFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class SpecifyMatche extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SpecifyMatche.
+     * @return A new instance of fragment InfoSpecificMatchFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SpecifyMatche newInstance(String param1, String param2) {
-        SpecifyMatche fragment = new SpecifyMatche();
+    public static InfoSpecificMatchFragment newInstance(String param1, String param2) {
+        InfoSpecificMatchFragment fragment = new InfoSpecificMatchFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class SpecifyMatche extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_specify_matche, container, false);
+        return inflater.inflate(R.layout.fragment_info_specific_match, container, false);
     }
 }
