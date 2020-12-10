@@ -8,4 +8,5 @@
     <string name="title_groups">Groups</string>
     <string name="title_tabGroup">Group</string>
     <string name="title_tabMatchInfo">Match Info</string>
+    <string name="todo">TODO</string>
 </resources>
