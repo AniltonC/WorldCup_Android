@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.infosystem.worldcup.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_specifyMatche"
+            app:destination="@id/specifyMatche" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchesFragment"
+        android:name="com.infosystem.worldcup.MatchesFragment"
+        android:label="fragment_matches"
+        tools:layout="@layout/fragment_matches" >
+        <action
+            android:id="@+id/action_matchesFragment_to_specifyMatche"
+            app:destination="@id/specifyMatche" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.infosystem.worldcup.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" >
+        <action
+            android:id="@+id/action_groupsFragment_to_specifyGroup"
+            app:destination="@id/specifyGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.infosystem.worldcup.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/specifyMatche"
+        android:name="com.infosystem.worldcup.SpecifyMatche"
+        android:label="fragment_specify_matche"
+        tools:layout="@layout/fragment_specify_matche" >
+        <action
+            android:id="@+id/action_specifyMatche_to_specifyGroup"
+            app:destination="@id/specifyGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/specifyGroup"
+        android:name="com.infosystem.worldcup.SpecifyGroup"
+        android:label="fragment_specify_group"
+        tools:layout="@layout/fragment_specify_group" />
+</navigation>

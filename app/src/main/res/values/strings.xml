@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">World Cup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_more">More</string>
+    <string name="title_home">Home</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_groups">Groups</string>
+</resources>

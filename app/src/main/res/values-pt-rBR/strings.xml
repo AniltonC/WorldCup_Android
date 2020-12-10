@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Copa do Mundo</string>
+    <string name="title_more">Mais</string>
+    <string name="title_home">Início</string>
+    <string name="title_matches">Partidas</string>
+    <string name="title_groups">Grupos</string>
+</resources>
