@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -46,17 +47,17 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_Group_Name" />
-    <!--    TEAM 1 -->
+<!--    TEAM 1 -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/image_TeamLogo_1"
+        app:layout_constraintBottom_toBottomOf="@+id/image_TeamLogo_"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/image_TeamLogo_1"
+        app:layout_constraintTop_toTopOf="@+id/image_TeamLogo_"
         app:srcCompat="@drawable/ic_group_lateral_bar" />
 
     <ImageView
-        android:id="@+id/image_TeamLogo_1"
+        android:id="@+id/image_TeamLogo_"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -66,44 +67,44 @@
         app:srcCompat="@drawable/club_logo" />
 
     <TextView
-        android:id="@+id/text_TeamName_1"
+        android:id="@+id/text_TeamName_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/title_team_Name"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_TeamLogo_1"
-        app:layout_constraintStart_toEndOf="@+id/image_TeamLogo_1"
-        app:layout_constraintTop_toTopOf="@+id/image_TeamLogo_1" />
+        app:layout_constraintBottom_toBottomOf="@+id/image_TeamLogo_"
+        app:layout_constraintStart_toEndOf="@+id/image_TeamLogo_"
+        app:layout_constraintTop_toTopOf="@+id/image_TeamLogo_" />
 
     <TextView
-        android:id="@+id/text_TeamP_1"
+        android:id="@+id/text_TeamP_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="@+id/text_TeamName_1" />
+        app:layout_constraintTop_toTopOf="@+id/text_TeamName_" />
 
     <TextView
-        android:id="@+id/text_TeamBalance_1"
+        android:id="@+id/text_TeamBalance_"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textView24"
         app:layout_constraintStart_toStartOf="@+id/textView24"
-        app:layout_constraintTop_toTopOf="@+id/text_TeamP_1" />
+        app:layout_constraintTop_toTopOf="@+id/text_TeamP_" />
 
     <TextView
-        android:id="@+id/text_TeamPts_1"
+        android:id="@+id/text_TeamPts_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textView25"
         app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toTopOf="@+id/text_TeamBalance_1" />
+        app:layout_constraintTop_toTopOf="@+id/text_TeamBalance_" />
 
-    <!--    TEAM 2 -->
+<!--    TEAM 2 -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,7 +120,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_TeamLogo_1"
+        app:layout_constraintTop_toBottomOf="@+id/image_TeamLogo_"
         app:srcCompat="@drawable/club_logo" />
 
     <TextView

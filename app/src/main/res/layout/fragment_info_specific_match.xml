@@ -7,16 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".InfoSpecificMatchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INFO PARTIDA ESPECÍFICA"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/stadium_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_InfoSpcMatch_NameStd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Stadium Salzburg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/text_InfoSpcMatch_CityStd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Salzburg"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text_InfoSpcMatch_NameStd"
+        app:layout_constraintTop_toBottomOf="@+id/text_InfoSpcMatch_NameStd" />
+
+    <TextView
+        android:id="@+id/text_InfoSpcMatch_Stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Group stage, MD6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_InfoSpcMatch_CityStd"
+        app:layout_constraintTop_toBottomOf="@+id/text_InfoSpcMatch_CityStd" />
+
+    <TextView
+        android:id="@+id/text_InfoSpcMatch_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Wednesday, 9 Dec 2020 - 16:00"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text_InfoSpcMatch_Stage"
+        app:layout_constraintTop_toBottomOf="@+id/text_InfoSpcMatch_Stage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

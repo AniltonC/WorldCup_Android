@@ -28,6 +28,11 @@ public class GroupSpecificMatchFragment extends Fragment {
         // Required empty public constructor
     }
 
+//    public GroupSpecificMatchFragment(Group group) {
+//        this.group = group;
+//        // Required empty public constructor
+//    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.

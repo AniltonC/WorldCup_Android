@@ -7,6 +7,46 @@
     <string name="title_matches">Matches</string>
     <string name="title_groups">Groups</string>
     <string name="title_tabGroup">Group</string>
+    <string name="title_GroupName">Group Name</string>
     <string name="title_tabMatchInfo">Match Info</string>
-    <string name="todo">TODO</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="title_team_Name">Team Name</string>
+    <string name="title_team_A">Team A</string>
+    <string name="title_team_B">Team B</string>
+    <string name="title_Goals_A">Goals A</string>
+    <string name="title_Goals_B">Goals B</string>
+    <string name="title_Time_Status" translatable="false">Status</string>
+    <string name="qualified">Qualified</string>
+    <string name="title_team_algeria">Algeria</string>
+    <string name="title_team_argentina">Argentina</string>
+    <string name="title_team_australia">Australia</string>
+    <string name="title_team_belgium">Belgium</string>
+    <string name="title_team_bosnia">Bosnia and Herzegovina</string>
+    <string name="title_team_brazil">Brazil</string>
+    <string name="title_team_cameroon">Cameroon</string>
+    <string name="title_team_chile">Chile</string>
+    <string name="title_team_colombia">Colombia</string>
+    <string name="title_team_costa">Costa Rica</string>
+    <string name="title_team_cote">Ivory Coast</string>
+    <string name="title_team_croatia">Croatia</string>
+    <string name="title_team_ecuador">Ecuador</string>
+    <string name="title_team_england">England</string>
+    <string name="title_team_france">France</string>
+    <string name="title_team_germany">Germany</string>
+    <string name="title_team_ghana">Ghana</string>
+    <string name="title_team_greece">Greece</string>
+    <string name="title_team_honduras">Honduras</string>
+    <string name="title_team_iran">Iran</string>
+    <string name="title_team_italy">Italy</string>
+    <string name="title_team_japan">Japan</string>
+    <string name="title_team_korea">South Korea</string>
+    <string name="title_team_mexico">Mexico</string>
+    <string name="title_team_netherlands">Netherlands</string>
+    <string name="title_team_nigeria">Nigeria</string>
+    <string name="title_team_portugal">Portugal</string>
+    <string name="title_team_russia">Russia</string>
+    <string name="title_team_spain">Spain</string>
+    <string name="title_team_switzerland">Switzerland</string>
+    <string name="title_team_uruguay">Uruguay</string>
+    <string name="title_team_usa">USA</string>
 </resources>

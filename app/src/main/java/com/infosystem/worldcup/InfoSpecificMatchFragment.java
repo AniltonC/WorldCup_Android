@@ -28,6 +28,11 @@ public class InfoSpecificMatchFragment extends Fragment {
         // Required empty public constructor
     }
 
+//    public InfoSpecificMatchFragment(Match match) {
+//        // Required empty public constructor
+//        this.match = match;
+//    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
