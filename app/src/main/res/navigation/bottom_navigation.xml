@@ -3,34 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_navigation"
-    app:startDestination="@id/specifyMatch">
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.infosystem.worldcup.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_homeFragment_to_specifyMatche"
-            app:destination="@id/specifyMatch" />
-    </fragment>
+    app:startDestination="@id/matchesFragment">
     <fragment
         android:id="@+id/matchesFragment"
         android:name="com.infosystem.worldcup.MatchesFragment"
         android:label="fragment_matches"
-        tools:layout="@layout/fragment_matches" >
-        <action
-            android:id="@+id/action_matchesFragment_to_specifyMatche"
-            app:destination="@id/specifyMatch" />
-    </fragment>
+        tools:layout="@layout/fragment_matches" />
     <fragment
         android:id="@+id/groupsFragment"
         android:name="com.infosystem.worldcup.GroupsFragment"
         android:label="fragment_groups"
-        tools:layout="@layout/fragment_groups" >
-        <action
-            android:id="@+id/action_groupsFragment_to_specifyGroup"
-            app:destination="@id/specifyGroup" />
-    </fragment>
+        tools:layout="@layout/fragment_groups" />
     <fragment
         android:id="@+id/moreFragment"
         android:name="com.infosystem.worldcup.MoreFragment"
@@ -40,14 +23,5 @@
         android:id="@+id/specifyMatch"
         android:name="com.infosystem.worldcup.SpecifyMatch"
         android:label="fragment_specify_match"
-        tools:layout="@layout/fragment_specify_match">
-        <action
-            android:id="@+id/action_specifyMatche_to_specifyGroup"
-            app:destination="@id/specifyGroup" />
-    </fragment>
-    <fragment
-        android:id="@+id/specifyGroup"
-        android:name="com.infosystem.worldcup.SpecifyGroup"
-        android:label="fragment_specify_group"
-        tools:layout="@layout/fragment_specify_group" />
+        tools:layout="@layout/fragment_specify_match"/>
 </navigation>

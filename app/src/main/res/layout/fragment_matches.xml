@@ -4,5 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layoutMatches"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MatchesFragment"/>
+    android:layout_height="match_parent">
+<!--    tools:context=".MatchesFragment">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/matchesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

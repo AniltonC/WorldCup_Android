@@ -22,17 +22,14 @@ import java.util.List;
 public class SpecifyMatch extends Fragment {
     PagerAdapterSpecificMatch pagerAdapterSpecificMatch;
     ViewPager2 viewPager;
-    //    TextView text_TeamName_A, text_TeamName_B;
-//    ImageView image_Team_A, image_Team_B;
     private final List<String> titles = new ArrayList<>();
-    private final Match match;
+    private Match match;
 
     public SpecifyMatch() {
-        Team team_A = new Team("Alemanha", "https://icons.veryicon.com/128/Flag/2014%20World%20Cup%20Flags/Germany.png", null);
-        Team team_B = new Team("Argentina", "https://icons.veryicon.com/128/Flag/2014%20World%20Cup%20Flags/Argentina.png", null);
-        this.match = new Match(team_A, team_B, "Eliminatórias", "Full Time", null);
-        this.match.setGoals_A(1);
-        this.match.setGoals_B(0);
+    }
+
+    public SpecifyMatch(Match match) {
+       this.match = match;
     }
 
     @Nullable
@@ -44,61 +41,38 @@ public class SpecifyMatch extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        if(match != null) {
 
-        TextView text_TeamName_A = view.findViewById(R.id.text_SpcMatch_Club_A);
-        TextView text_TeamName_B = view.findViewById(R.id.text_SpcMatch_Club_B);
-        ImageView image_Team_A = view.findViewById(R.id.img_SpcMatch_Icon_A);
-        ImageView image_Team_B = view.findViewById(R.id.img_SpcMatch_Icon_B);
+            ImageView icon_Team_A = view.findViewById(R.id.img_SpcMatch_Icon_A);
+            ImageView icon_Team_B = view.findViewById(R.id.img_SpcMatch_Icon_B);
+            TextView name_Team_A = view.findViewById(R.id.text_SpcMatch_Club_A);
+            TextView name_Team_B = view.findViewById(R.id.text_SpcMatch_Club_B);
+            TextView scoreboard = view.findViewById(R.id.text_SpcMatch_ScoreBoard);
+            TextView goals_Team_A = view.findViewById(R.id.text_SpcMatch_Goals_A);
+            TextView goals_Team_B = view.findViewById(R.id.text_SpcMatch_Goals_B);
+            TextView status = view.findViewById(R.id.text_SpcMatch_TimeStatus);
+            TextView description = view.findViewById(R.id.text_SpcMatch_Description);
 
-        text_TeamName_A.setText(match.getTeam_A().getName());
-        text_TeamName_B.setText(match.getTeam_B().getName());
+            Picasso.get().load(match.getTeam_A().getIconURL()).into(icon_Team_A);
+            Picasso.get().load(match.getTeam_B().getIconURL()).into(icon_Team_B);
+            name_Team_A.setText(match.getTeam_A().getName());
+            name_Team_B.setText(match.getTeam_B().getName());
+            scoreboard.setText(match.getScore());
+            goals_Team_A.setText(match.getDesc_Goals_A());
+            goals_Team_B.setText(match.getDesc_Goals_B());
+            status.setText(match.getStatus());
+            description.setText(match.getDescription());
 
-        Picasso.get().load(match.getTeam_A().getIconURL()).into(image_Team_A);
-        Picasso.get().load(match.getTeam_B().getIconURL()).into(image_Team_B);
-
-        TextView text_MatchStatus = view.findViewById(R.id.text_SpcMatch_TimeStatus);
-        text_MatchStatus.setText(match.getStatus());
-
-        //ViewPager setup
-        titles.clear();
-        if (match.getGroup() != null)
- //           if (!titles.contains(title_TabGroup))
+            //ViewPager setup
+            titles.clear();
+            if (match.getGroup() != null)
                 titles.add(getContext().getResources().getString(R.string.title_tabGroup));
- //       if (!titles.contains(title_TabInfo))
             titles.add(getContext().getResources().getString(R.string.title_tabMatchInfo));
-        pagerAdapterSpecificMatch = new PagerAdapterSpecificMatch(this, titles.size(), match);
-        viewPager = view.findViewById(R.id.viewPagerSpecificMatch);
-        viewPager.setAdapter(pagerAdapterSpecificMatch);
-        TabLayout tabLayout = view.findViewById(R.id.tabBarSpecificMatch);
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText(titles.get(position))).attach();
-
-
-//        text_TeamName_A = view.findViewById(R.id.text_SpcMatch_Club_A);
-//        text_TeamName_B = view.findViewById(R.id.text_SpcMatch_Club_B);
-//        image_Team_A = view.findViewById(R.id.img_SpcMatch_Icon_A);
-//        image_Team_B = view.findViewById(R.id.img_SpcMatch_Icon_B);
-//        Picasso.get().load("https://icons.veryicon.com/128/Flag/2014%20World%20Cup%20Flags/Brazil.png").into(image_Team_A);
-//        Picasso.get().load("https://icons.veryicon.com/128/Flag/2014%20World%20Cup%20Flags/Mexico.png").into(image_Team_B);
-//        text_TeamName_A.setText(R.string.title_team_brazil);
-//        text_TeamName_B.setText(R.string.title_team_mexico);
-        // Passar como parâmetro as seleções e o grupo, se a partida for fase de grupo
+            pagerAdapterSpecificMatch = new PagerAdapterSpecificMatch(this, titles.size(), match);
+            viewPager = view.findViewById(R.id.viewPagerSpecificMatch);
+            viewPager.setAdapter(pagerAdapterSpecificMatch);
+            TabLayout tabLayout = view.findViewById(R.id.tabBarSpecificMatch);
+            new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText(titles.get(position))).attach();
+        }
     }
-
-    //    @Override
-//    public void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        TextView text_TeamName_A = this.getView().findViewById(R.id.text_SpcMatch_Club_A);
-//        TextView text_TeamName_B = this.getView().findViewById(R.id.text_SpcMatch_Club_B);
-//        ImageView image_Team_A = this.getView().findViewById(R.id.img_SpcMatch_Icon_A);
-//        ImageView image_Team_B = this.getView().findViewById(R.id.img_SpcMatch_Icon_B);
-//
-//        text_TeamName_A.setText(match.getTeam_A().getName());
-//        text_TeamName_B.setText(match.getTeam_B().getName());
-//
-//        Picasso.get().load(match.getTeam_A().getIconURL()).into(image_Team_A);
-//        Picasso.get().load(match.getTeam_B().getIconURL()).into(image_Team_B);
-//
-//        TextView text_MatchStatus = this.getView().findViewById(R.id.text_SpcMatch_TimeStatus);
-//        text_MatchStatus.setText(match.getStatus());
-//    }
 }

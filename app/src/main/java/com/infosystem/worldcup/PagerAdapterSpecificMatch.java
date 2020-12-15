@@ -33,7 +33,7 @@ public class PagerAdapterSpecificMatch extends FragmentStateAdapter {
 
         switch (position){
             case 0:
-                return new GroupSpecificMatchFragment();
+                return new GroupSpecificMatchFragment(match.getGroup());
             case 1:
                 return new InfoSpecificMatchFragment();
             default:

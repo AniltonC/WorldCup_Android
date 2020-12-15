@@ -46,4 +46,5 @@
     <string name="title_team_switzerland">Suíça</string>
     <string name="title_team_uruguay">Uruguai</string>
     <string name="title_team_usa">Estados Unidos</string>
+    <string name="open_match">Abrir partida</string>
 </resources>
